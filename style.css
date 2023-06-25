@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main {
+    background-color: white;
+    padding: 3rem;
+    margin: 20%;
+    max-width: 800px;
+    border-radius: 1rem 1rem 10rem 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    min-width: 520px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: start;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 90%;
+    height: 0;
+    border-top: 0.5px solid hsl(0, 0%, 86%);
+}
+
+button {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    border: none;
+    aspect-ratio: 1;
+    width: 4rem;
+}
+
+button img {
+    width: 50%;
+    aspect-ratio: 1;
+}
+
+h1 {
+    font-size: 0.8rem;
+    color: hsl(0, 1%, 44%);
+    font-weight: 700;
+}
+
+input {
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 1.5rem;
+}
+
+.error {
+    font-size: 0.8rem;
+    color: red;
+    font-style: italic;
+}
+
+.result-container * {
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+    
+}
+
+.fade {
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+        font-size: 5rem;
+    }
+
+    50% {
+        opacity: 0;
+        font-size: 0rem;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 5rem;
+    }
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+button:active {
+    scale: 0.9;
+}
+
+input:hover {
+    border-color: black !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 1000px) {
+    .input-container {
+        width: auto;
+    }
+
+    main {
+        min-width: none;
+        width: 95%;
+        scale: 0.65;
+    }
+
+
+}
+
